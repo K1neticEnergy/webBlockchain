@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     margin:0;
@@ -7,16 +7,16 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Mulish', 'Lato', sans-serif;
-    
+    text-align: justify
 }
 body{
     background: hsla(339, 100%, 55%, 1);
 
-    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: linear-gradient(90deg, rgb(203, 236, 255) 0%, hsla(197, 100%, 64%, 1) 100%);
 
-    background: -moz-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgb(203, 236, 255) 0%, hsla(197, 100%, 64%, 1) 100%);
 
-    background: -webkit-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(203, 236, 255) 0%, hsla(197, 100%, 64%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1 );
     
@@ -25,7 +25,7 @@ body{
 .horizon-pointer:hover{cursor: pointer; transition-property: color; color:#00bcd4}
 
 #check:checked ~ .horizon-sidebar{
-    width:60px;
+    width:100px;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -33,9 +33,6 @@ body{
     display: contents;
 }
 
-#check:checked ~ .horizon-sidebar li span{
-    display: none;
-}
 #check:checked ~ .horizon-sidebar li a{
     display: none;
 }
@@ -49,6 +46,7 @@ body{
 .horizon-set-margin-top{
     margin-top:0!important;
 }
+
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 /*html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}*/
@@ -77,9 +75,9 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+
 .horizon-serif{font-family:serif}.horizon-sans-serif{font-family:sans-serif}.horizon-cursive{font-family:cursive}.horizon-monospace{font-family:monospace}
-h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.horizon-wide{letter-spacing:4px}
+.horizon-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .horizon-table,.horizon-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.horizon-table-all{border:1px solid #ccc}
@@ -105,7 +103,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-dropdown-hover:hover > .horizon-button:first-child,.horizon-dropdown-click:hover > .horizon-button:first-child{background-color:#ccc;color:#000}
 .horizon-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .horizon-check,.horizon-radio{width:24px;height:24px;position:relative;top:6px}
-.horizon-sidebar{height:100%;width:240px;background-color:rgba(255, 255, 255, 0.616);position: fixed!important;z-index:1;overflow:auto;transition: 0.5s;backdrop-filter: blur(5px);}
+.horizon-sidebar{height:100%;width:280px;background-color:rgba(255, 255, 255, 0.616);position: fixed!important;z-index:0;overflow:auto;transition: 0.5s;backdrop-filter: blur(5px);}
 .horizon-bar-block .horizon-dropdown-hover,.horizon-bar-block .horizon-dropdown-click{width:100%}
 .horizon-bar-block .horizon-dropdown-hover .horizon-dropdown-content,.horizon-bar-block .horizon-dropdown-click .horizon-dropdown-content{min-width:100%}
 .horizon-bar-block .horizon-dropdown-hover .horizon-button,.horizon-bar-block .horizon-dropdown-click .horizon-button{width:100%;text-align:left;padding:8px 16px}
@@ -285,3 +283,75 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .horizon-border-dark-grey,.horizon-hover-border-dark-grey:hover,.horizon-border-dark-gray,.horizon-hover-border-dark-gray:hover{border-color:#616161!important}
 .horizon-border-pale-red,.horizon-hover-border-pale-red:hover{border-color:#ffe7e7!important}.horizon-border-pale-green,.horizon-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .horizon-border-pale-yellow,.horizon-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.horizon-border-pale-blue,.horizon-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

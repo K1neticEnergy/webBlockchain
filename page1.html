@@ -6,29 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Blockchain.io</title>
 </head>
 <body>
     <input type="checkbox" id="check" class="horizon-hide">
-    <nav class="horizon-sidebar"> 
+    <nav class="horizon-sidebar me-auto"> 
         <ul>
             <li><label class="horizon-block horizon-padding-large" for="check">
-                <a href="index.html" class="horizon-large">Blockchain.io</a>
-                <p class="horizon-right horizon-pointer horizon-text-white"><i class="fa fa-bars horizon-align-center" aria-hidden="true"></i>
+                <a href="index.html" class="horizon-large text-decoration-none">Blockchain.io</a>
+                <p class="horizon-right horizon-pointer horizon-text-white"><i class="fa fa-bars horizon-align-center h3" aria-hidden="true"></i>
                 </p>
             </label></li>
-            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click" href="#Prolouge">Blockchain là gì?</a></li>
-            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click" href="#Original">Nguồn gốc</a></li>
-            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click" href="page2.html">Lịch sử phát triển</a></li>
-            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click" href="page3.html">Ứng dụng</a></li>
- 	        <li><a class="horizon-block horizon-padding-large horizon-dropdown-click" href="page4.html">Tiềm năng phát triển</a></li>
+            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click text-decoration-none" href="#Prolouge">Sơ lược Blockchain</a></li>
+            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click text-decoration-none" href="#Original">Nguồn gốc</a></li>
+            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click text-decoration-none" href="page2.html">Lịch sử phát triển</a></li>
+            <li><a class="horizon-block horizon-padding-large horizon-dropdown-click text-decoration-none" href="page3.html">Ứng dụng</a></li>
+ 	        <li><a class="horizon-block horizon-padding-large horizon-dropdown-click text-decoration-none" href="page4.html">Tiềm năng phát triển</a></li>
         </ul>
     </nav>   
     <div class="horizon-content horizon-flexible-content">
-        <h1 class="horizon-text-white horizon-bold horizon-jumbo">Blockchain là gì?</h1>
-        <section id="Prolouge"><br>
+        <p class="display-2"><strong>Blockchain</strong></p>
+        <section id="Prolouge">
             <p>Ngày nay, rất nhiều tổ chức trung gian (bên thứ 3) có nhiệm vụ thu thập và phân phối dịch vụ hay dữ liệu. 
                 Ví dụ, ngân hàng là tổ chức trung gian giũa người chuyển tiền và người nhận tiền, 
                 Facebook là tổ chức trung gian giữa các nhà quảng cáo và người dùng. 
@@ -39,74 +41,154 @@
                 để duy trì mối quan hệ tốt và tiếp tục phát triển sản phẩm theo yêu cầu người tiêu dùng. 
                 Blockchain ra đời giúp dữ liệu không bị bên thứ 3 kiểm soát tập trung (tức dữ liệu được phân tán) 
                 và không đặt quá nhiều sự tin tưởng với bất cứ tổ chức trung gian nào.</p>
-        </section><br>
+        </section>
     
         <section id="Blockchain">
-            <h1 class="horizon-text-white horizon-bold horizon-larger">Blockchain</h1>  
-            <div style="display: inline-flex">
-                <p class="horizon-justify" style="padding-right: 1em;"><b>Blockchain</b> là một <b>cơ sở dữ liệu</b> phân cấp lưu trữ thông tin các <b>khối (block)</b>
-                được liên kết với nhau bằng chuỗi mã hóa (cryptographic hash) và mở rộng theo thời gian.
-                Mỗi khối lưu trữ một mật mã của một khối liên kết trước đó, 
-                một con dấu thời gian và bộ dữ liệu về giao dịch.</p>
-                <figure class="horizon-set-margin-top">
-                    <img src="/Assets/800px-Bitcoin_Block_Data.svg.png"  style=" flex-grow:0; flex-shrink:0; width: 25rem;">
-                    <figcaption style="text-align: center;">Hình 1: Cấu trúc Blockchain của Bitcoin</figcaption>
-                </figure>
-                
+            <p class="display-5"><strong>Sơ lược Blockchain</strong></p>
+            <div class="row">
+                <div class="col-lg-5">
+                    <p class="text-justify"><b>Blockchain</b> là một <b>cơ sở dữ liệu</b> phân cấp lưu trữ thông tin các <b>khối (block)</b>
+                        được liên kết với nhau bằng chuỗi mã hóa (cryptographic hash) và mở rộng theo thời gian.
+                        Mỗi khối lưu trữ một mật mã của một khối liên kết trước đó, 
+                        một con dấu thời gian và bộ dữ liệu về giao dịch.</p>
+                         
+                    <p>
+                        Blockchain được chia sẻ lên mạng lưới ngang hàng (peer-to-peer network). 
+                        Mọi máy tính tham gia vào mang lưới đều quản lý blockchain mà không cần một tổ chức 
+                        trung gian nào chịu trách nhiệm toàn bộ. Một khi dữ liệu đã được mạng lưới chấp nhận, 
+                        việc thay đổi dữ liệu bất chính là việc không khả thi.
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <figure class="horizon-set-margin-top">
+                        <img src="/Assets/800px-Bitcoin_Block_Data.svg.png" class="figure-img img-fluid img mx-auto d-block" style="width: 60vw;">
+                        <figcaption class="figure-caption text-center">Cấu trúc Blockchain của Bitcoin</figcaption>
+                    </figure>
+                </div>
+            </div> 
+           
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-3" style="max-width: 540px; background-color: rgb(255,255,255,0);">
+                        <div class="row g-0">
+                            <div class="col-md-6 horizon-padding-small">
+                                <img src="/Assets/Centralized-removebg-preview.png">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Mạng lưới truyền thống</h5>
+                                    <p class="card-text">Sổ cái do bên thứ ba nắm giữ, việc xác minh và tính toán được tập trung.</p>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-3" style="max-width: 540px; background-color:rgb(255,255,255,0);">
+                        <div class="row g-0">
+                            <div class="col-md-3 horizon-padding-small">
+                                <img src="/Assets/decentralized-networks-3-removebg-preview.png">
+                            </div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Mạng lưới blockchain</h5>
+                                    <p class="card-text">Sổ cái được phân bổ đồng đều, việc xác minh và tính toán được phân tán.</p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
-<br>
-            <p>
-                Blockchain được chia sẻ lên mạng lưới ngang hàng (peer-to-peer network). 
-                Mọi máy tính tham gia vào mang lưới đều quản lý blockchain mà không cần một tổ chức 
-                trung gian nào chịu trách nhiệm toàn bộ. Một khi dữ liệu đã được mạng lưới chấp nhận, 
-                việc thay đổi dữ liệu bất chính là việc không khả thi.
-            </p><br>
-<img src="/Assets/decentralized-networks-3.png" style="display: block ;margin-left: auto ;margin-right: auto;width: 35%;height: 35%;"><br>
-            </p><br>
+
             <p>Sử dụng Blockchain, người tham gia có thể xác nhận giao dịch hoặc hoạt động trên hệ thống mà không cần 
             thông qua một đơn vi xác thực tập trung nào. Nhờ sử dụng hệ thống tính toán phân cấp với khả năng chịu lỗi 
-            byzantine (lỗi liên quan đến đường truyền tin cậy) cao,  Blockchain giúp xóa bỏ các hậu quả lớn khi dữ liệu 
+            byzantine (lỗi liên quan đến đường truyền tin cậy) cao, Blockchain giúp xóa bỏ các hậu quả lớn khi dữ liệu 
             bị thay đổi trong bối cảnh thương mại toàn cầu. Mô hình tính toán này là nền tảng của việc tạo ra các ứng dụng 
-            phân tán.</p><br>
+            phân tán.</p>
         </section>
     
         <section id="Original">
-            <h1 class="horizon-text-white horizon-bold horizon-larger">Nguồn gốc</h1>
-            <br><p>
+            <p class="display-5"><strong>Nguồn gốc</strong></p>
+            <p>
                 Từ xa xưa, khi tiền tệ ra đời, 
                 giao dịch giữa người mua và người bán dễ dàng hơn, 
                 nhu cầu về giao dịch ngày càng nhiều hơn đòi hỏi phải 
                 có sự lưu trữ về giao dịch để thuận lợi cho việc tính toán, 
                 ghi chép nợ, theo dõi về tài sản từ đó hình thành nên sổ cái (ledger).
-            </p><br>
-            <br><p>
+            </p>
+            <p>
                 Tuy nhiên, hệ thống sổ cái này tồn tại hạn chế như không chính xác và minh bạch 
                 (cố tính ghi chép sai, vu khống, mua chuộc, giả mạo chữ ký). Vì thế cần có 1 
                 nhân chứng nên bên thứ ba được hình thành và các hoạt động giao dịch này được 
                 thông qua bên thứ ba (là nơi lưu trữ về thông tin giao dịch), việc đó cũng đồng nghĩa 
                 phải tốn 1 khoảng chi phí duy trì cho bên thứ 3.
-            </p><br>
-            <br><p>
+            </p>
+            <figure>
+                <img src="/Assets/source1.jpg" class="figure-img img-fluid img mx-auto d-block" style="width: 25rem;">
+                <figcaption class="figure-caption text-center">Biểu đồ tốc độ tăng trưởng kinh tế của thể giới</figcaption>
+            </figure>
+            <p>
+                Sau cuộc khủng hoảng tài chính năm 2008, hệ thống tài chính Mỹ sụp đổ hoàn toàn khiến người dân đánh mất 
+                niềm tin vào sự kiểm soát dòng tiền của bên thứ ba.
+            </p>
+            <p>
                 Giải quyết bài toán trên chính là ý tưởng mở đầu cho công nghệ Blockchain ra đời.
-            </p><br>
-            <br><p>
+            </p>
+            <p>
                 Blockchain được phát minh bởi Satoshi Nakamoto vào năm 2008 và được hiện thực hóa vào năm sau đó 
                 như là một phần cốt lõi của Bitcoin, khi công nghệ blockchain đóng vai trò như là một cuốn sổ cái 
-                cho tất cả các giao dịch.
-            </p><br>
-            <img src="/Assets/bitcoin.png" style="display: block ;margin-left: auto ;margin-right: auto;width: 35%;height: 35%;"><br>
-            
-            <p>
-                Việc phát minh blockchain làm cho Bitcoin trở thành loại tiền tệ kỹ thuật số đầu tiên giải quyết được vấn đề lặp chi 
+                cho tất cả các giao dịch.Việc phát minh blockchain làm cho Bitcoin trở thành loại tiền tệ kỹ thuật số đầu tiên giải quyết được vấn đề lặp chi 
                 (chi tiêu gian lận khi 1 lượng tiền được dùng 2 lần).
-            </p><br>
+            </p>
+            <img src="/Assets/bitcoin.png" style="display: block ;margin-left: auto ;margin-right: auto;width: 35%;height: 35%;">
         </section>
 
     </div>
+
+    <footer class="horizon-content horizon-flexible-content mt-3">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6><img class="img-fluid" src="/Assets/Untitled-1.png" style="width: 100px;" alt="">  Blockchain.io</h6>
+                <p class="text-justify">Designed by Team Horizon - HCMUT</p>
+                <p class="text-justify">TRẦN HÀ TUẤN KIỆT - kiet.trank1netic@hcmut.edu.vn</p>
+                <p class="text-justify">THI KHẮC QUÂN - quan.thibluesky17@hcmut.edu.vn</p>
+                <p class="text-justify">TRẦN QUỐC DŨNG - dung.trandan5@hcmut.edu.vn</p>
+                <p class="text-justify">HỒ TRƯƠNG ĐỨC TIẾN - tien.hoshuti1006@hcmut.edu.vn</p>
+              </div>
     
-    <footer>
-        
-    </footer>
+              <div class="col-xs-6 col-md-6">
+                <img class="img-fluid" src="/Assets/logobk-removebg.png" alt="" style="width: 100px;">
+                <p class="text-justify">Trường Đại học Bách Khoa - Đại học Quốc gia Thành phố Hồ Chí Minh</p>
+                <p><span class="fa fa-map-marker mr-2"></span> Tx Dĩ An, Tỉnh Bình Dương.</p>
+                <p class="text-justify"></p>
+                <p class="text-justify"></p>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+             <a href="#">Blockchain.io</a>.
+                </p>
+              </div>
+    
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                </ul>
+              </div>
+            </div>
+          </div>
+  </footer>
    
 </body>
 </html>
